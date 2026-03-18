@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>核心考點 · 保險法規（389題）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F5F2;--card:#FFF;--acc:#EDE8E2;--t1:#2C2825;--t2:#7A746D;--t3:#A9A29A;--warm:#C4956A;--rose:#BF8B8B;--sage:#8FA391;--blue:#7E9AB5;--plum:#9E8BA8;--bdr:#E5E0DA;--red:#D4654A;--yel:#D4A94A;--grn:#6B9E76;--sh:0 1px 3px rgba(44,40,37,.06);--r:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--t1);line-height:1.9;font-weight:400}
+.container{max-width:860px;margin:0 auto;padding:40px 24px 100px}
+.hero{text-align:center;padding:60px 20px 40px;position:relative}
+.hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:40px;background:var(--blue)}
+.hero h1{font-family:'Noto Serif TC',serif;font-size:clamp(24px,4vw,36px);font-weight:700;letter-spacing:2px;line-height:1.4;margin-bottom:8px}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero-sub{font-size:13px;color:var(--t2);font-weight:300;margin-bottom:16px}
+.hero-stats{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
+.hero-stat{text-align:center}
+.hero-stat .n{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:600;color:var(--blue)}
+.hero-stat .l{font-size:11px;color:var(--t3);letter-spacing:1px}
+.nav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--bdr);padding:12px 0;margin-bottom:32px;overflow-x:auto;white-space:nowrap;text-align:center}
+.nav a{display:inline-block;padding:6px 14px;font-size:12px;color:var(--t2);text-decoration:none;border-radius:100px;font-weight:500;transition:all .2s}
+.nav a:hover,.nav a.act{background:var(--blue);color:#fff}
+.ch{margin-bottom:56px;scroll-margin-top:80px}
+.ch-hdr{display:flex;align-items:center;gap:16px;margin-bottom:24px;padding-bottom:16px;border-bottom:2px solid var(--bdr)}
+.badge{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;padding:4px 10px;border-radius:100px;letter-spacing:1px;flex-shrink:0}
+.b-r{background:rgba(212,101,74,.12);color:var(--red)}.b-y{background:rgba(212,169,74,.12);color:var(--yel)}.b-g{background:rgba(107,158,118,.12);color:var(--grn)}
+.ch-t{font-family:'Noto Serif TC',serif;font-size:20px;font-weight:700}
+.ch-m{font-size:12px;color:var(--t3);margin-top:2px}
+.topic{background:var(--card);border:1px solid var(--bdr);border-radius:var(--r);padding:24px;margin-bottom:16px;box-shadow:var(--sh)}
+.th{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.tn{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--blue);font-weight:600;width:28px;flex-shrink:0}
+.tt{font-size:15px;font-weight:700}
+.tf{font-family:'JetBrains Mono',monospace;font-size:10px;margin-left:auto;flex-shrink:0;background:rgba(212,101,74,.08);padding:2px 8px;border-radius:100px;color:var(--red)}
+.tb{padding-left:38px;font-size:14px;color:var(--t2);line-height:2}
+.tb strong{color:var(--t1);font-weight:600}
+.key{display:inline-block;background:rgba(126,154,181,.1);border:1px solid rgba(126,154,181,.2);border-radius:4px;padding:1px 6px;font-size:13px;font-weight:600;color:var(--blue);margin:0 1px}
+.trap{display:inline-block;background:rgba(212,101,74,.08);border:1px solid rgba(212,101,74,.15);border-radius:4px;padding:1px 6px;font-size:13px;font-weight:600;color:var(--red);margin:0 1px}
+.memo{display:inline-block;background:rgba(143,163,145,.1);border:1px solid rgba(143,163,145,.2);border-radius:4px;padding:1px 6px;font-size:13px;font-weight:600;color:var(--sage);margin:0 1px}
+.nb{display:inline-flex;align-items:center;background:var(--card);border:1px solid var(--bdr);border-radius:6px;padding:3px 10px;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;color:var(--blue);margin:1px 2px}
+table.ct{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+.ct th{background:var(--acc);padding:8px 12px;font-size:11px;color:var(--t3);letter-spacing:1px;font-weight:500;border-bottom:2px solid var(--bdr);text-align:left}
+.ct td{padding:8px 12px;border-bottom:1px solid var(--acc);vertical-align:top}
+.ct tr:last-child td{border-bottom:none}
+.fm{background:var(--acc);border-radius:8px;padding:16px 20px;margin:12px 0;font-size:13px;line-height:2;border-left:3px solid var(--blue)}
+.fm strong{color:var(--blue)}
+.footer{text-align:center;padding:40px 20px;color:var(--t3);font-size:12px;border-top:1px solid var(--bdr);margin-top:60px}
+@media(max-width:640px){.container{padding:20px 16px 80px}.topic{padding:18px}.tb{padding-left:0}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="hero">
+  <h1>保險法規<em>核心考點</em></h1>
+  <p class="hero-sub">5 章 + 附錄 · 389 題完整萃取 · 陷阱標記 + 數字口訣</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="n">389</div><div class="l">總題數</div></div>
+    <div class="hero-stat"><div class="n">6</div><div class="l">區塊</div></div>
+    <div class="hero-stat"><div class="n">(3)</div><div class="l">猜題首選 30.1%</div></div>
+    <div class="hero-stat"><div class="n">(4)</div><div class="l">最冷 17.0%</div></div>
+  </div>
+</div>
+
+<div class="nav">
+  <a href="#c1">Ch1 契約基本</a>
+  <a href="#c2" class="act">Ch2 保險法核心</a>
+  <a href="#c3">Ch3 稅法遺產</a>
+  <a href="#c4">Ch4 消費者保護</a>
+  <a href="#c5">Ch5 業務員管理</a>
+  <a href="#ca">附錄數字</a>
+</div>
+
+<!-- ══════════ Ch1 ══════════ -->
+<div class="ch" id="c1">
+  <div class="ch-hdr"><span class="badge b-g">54題·8.2%</span><div><div class="ch-t">第一章 · 保險契約基本概念</div><div class="ch-m">猜(3) 命中率 39%</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">1.1</span><span class="tt">四大關係人</span><span class="tf">高頻</span></div>
+  <div class="tb">
+    <table class="ct">
+      <tr><th>角色</th><th>定義</th><th>重點</th></tr>
+      <tr><td><key>保險人</key></td><td>承擔風險的保險公司</td><td>經營保險事業之各種組織</td></tr>
+      <tr><td><key>要保人</key></td><td>有保險利益，申請契約並負繳費義務</td><td>契約當事人、須有行為能力</td></tr>
+      <tr><td><key>被保險人</key></td><td>以生命或身體為保標的之人</td><td>要保人須對其有保險利益</td></tr>
+      <tr><td><key>受益人</key></td><td>事故發生時有權受領保險金</td><td>由要保人指定/變更、無人數限制</td></tr>
+    </table>
+    <p><key>保險利益</key>存在於<strong>要保人與被保險人</strong>之間（非受益人）。</p>
+    <p>要保人對以下人有保險利益：①本人或家屬 ②生活費/教育費所仰給之人 ③<strong>債務人</strong> ④管理財產/利益之人</p>
+    <p><trap>陷阱</trap>「債權人」（借錢給你的人）→ <strong>無</strong>保險利益。</p>
+    <p>限制行為能力人訂立契約 → 須經<strong>法定代理人同意</strong>或於限制原因消滅後<strong>自己承認</strong>。</p>
+    <p>要保人對<strong>被保險人所知者</strong>應通知保險人。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">1.2</span><span class="tt">受益人規定</span></div>
+  <div class="tb">
+    <p>失能/醫療保險受益人 → 以<strong>被保險人本人為限</strong>，不得更改。</p>
+    <p>受益人指定/變更 → <strong>要保人</strong>之權利，無人數及對象限制。要保人得於事故發生前以契約或遺囑處分。</p>
+    <p>受益人故意致被保險人死亡 → <strong>喪失受益權</strong>。</p>
+    <p>受益人故意致被保險人<strong>未致死僅致失能</strong> → 保險公司仍給付<strong>全額</strong>失能保險金。</p>
+    <p>利害關係人均得向保險人請求<strong>保險契約謄本</strong>。</p>
+    <p>人身保險契約<strong>不得</strong>為指示式或無記名式（僅財產保險可以）。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">1.3</span><span class="tt">損害填補、分攤原則、複保險、共保</span></div>
+  <div class="tb">
+    <p><key>損害填補</key>：防止被保險人不當得利。適用於<strong>財產保險＋實支實付健康險</strong>。一張保單即可發生。</p>
+    <p><key>分攤原則</key>：使<strong>被保險人</strong>不致不當得利（非要保人）。由損害填補延伸。</p>
+    <p><key>複保險</key>：同一保險利益、同一事故與數保險公司分別訂立數個契約。故意不通知 → 契約<strong>無效</strong>。</p>
+    <p>共保方式：①巨災損失 ②配合政策 ③公共利益 ④提升服務 ⑤主管機關核准</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">1.4</span><span class="tt">未滿15歲與受監護宣告者</span></div>
+  <div class="tb">
+    <p>未滿15歲投保含死亡給付人壽保險：除<strong>喪葬費用</strong>外，其餘死亡給付於<strong>滿15歲時始生效力</strong>。</p>
+    <p>喪葬費用保險金額 ≤ 遺產稅喪葬費扣除額之<strong>一半</strong>。</p>
+    <p>受監護宣告者投保人壽保險：超過部分不負給付責任，<strong>無息退還</strong>超過部分已繳保費。</p>
+    <p>國外投資上限 <nb>45%</nb>（§146-4）。不動產投資上限 <nb>30%</nb>（除自用，§146-2）。</p>
+  </div></div>
+</div>
+
+<!-- ══════════ Ch2 ══════════ -->
+<div class="ch" id="c2">
+  <div class="ch-hdr"><span class="badge b-r">132題·20.1%</span><div><div class="ch-t">第二章 · 保險法核心條文與契約條款</div><div class="ch-m">🏆 全卷之王 · 猜(3) 29% · 選(4)最冷 16%</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">2.1</span><span class="tt">保費繳納與寬限復效</span><span class="tf">超高頻</span></div>
+  <div class="tb">
+    <p>繳費方式：一次繳清（<key>躉繳</key>）/ 分期（年/半年/季/月繳）。保費確定者 → 契約<strong>生效前</strong>交付。</p>
+    <p>繳費期間與保險期間<strong>不一定相同</strong>，可較短。</p>
+    <p><key>利害關係人</key>均得代要保人交付保險費（§115）。</p>
+    <div class="fm">
+      <strong>停復效時間軸：</strong><br>
+      保費到期 → 寬限期間（30日）→ 未繳 → 停效<br>
+      停效後 ≤6個月 → 直接申請復效<br>
+      停效後 >6個月 → 保險人 <nb>5日</nb> 內要求可保證明 → 收到後 <nb>15日</nb> 不拒絕 → <strong>視為同意</strong>
+    </div>
+    <p><memo>必背</memo>：5日要求、15日不拒＝同意。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">2.2</span><span class="tt">契約效力：撤銷、解除、終止</span><span class="tf">高頻</span></div>
+  <div class="tb">
+    <table class="ct">
+      <tr><th>效力</th><th>時機/事由</th><th>效果</th></tr>
+      <tr><td><key>撤銷</key></td><td>收到保單翌日起 <nb>10日</nb> 書面</td><td>翌日零時起<strong>自始無效</strong>（郵寄以郵戳當日零時）</td></tr>
+      <tr><td><key>解除</key></td><td>違反告知義務等法定事由</td><td><strong>自始不存在</strong>（溯及），保險人無須退還保費</td></tr>
+      <tr><td><key>終止</key></td><td>保險人破產、保標的物完全滅失</td><td>自終止日起消滅；終止前事故仍賠</td></tr>
+    </table>
+    <p><trap>陷阱</trap>「解除為自解除日起消滅」→ 錯，解除是自始不存在。</p>
+    <p><trap>陷阱</trap>「無體檢不得主張撤銷權」→ 錯。無論有無體檢均享有。</p>
+    <p>法定終止事由：保險人破產、保標的物非因契約所載事故完全滅失（<strong>不含</strong>要保人任意終止、停效逾期）。</p>
+    <p>破產中止 → 終止後保費已交付者，保險人<strong>應返還</strong>。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">2.3</span><span class="tt">契約無效事由</span></div>
+  <div class="tb">
+    <p>法定無效事由（<strong>全部都是</strong>）：</p>
+    <p>① 契約訂立時保標的危險已發生或已消滅<br>② 由第三人訂立死亡保險，<strong>未經被保險人書面同意</strong>並約定保險金額<br>③ 真實年齡超過保險人所定<strong>保險年齡限度</strong><br>④ 要保人意圖不當得利而為<strong>複保險</strong></p>
+    <p>約定無效（顯失公平）：①免除/減輕保險人義務 ②要保人/受益人/被保險人拋棄或限制權利 ③有重大不利益</p>
+    <p><trap>陷阱</trap>「加重保險人之義務」→ <strong>非</strong>約定無效事由。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">2.4</span><span class="tt">保證續保、電子保單、保單條款</span></div>
+  <div class="tb">
+    <p>保證續保：按續保生效時<strong>陳報主管機關之費率</strong>及<strong>被保險人年齡</strong>重新計算（不看身體狀況、不用經驗費率）</p>
+    <p>電子保單：①保險人與要保人共同約定 ②約定後<strong>仍可</strong>恢復紙本 ③保費應反映成本</p>
+    <p><trap>陷阱</trap>「約定後不能恢復紙本」→ 錯。</p>
+    <p>保單條款以網址取代紙本：是保險人與<strong>要保人</strong>共同遵守的約定（非被保險人）。節省成本需於附加費用反映。</p>
+    <p>示範條款目的：統一作業方式、減少分歧、確立信譽。<trap>陷阱</trap>「授權訂定彈性提高競爭力」→ 非目的。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">2.5</span><span class="tt">受益人代繳、告知義務、危險增加</span></div>
+  <div class="tb">
+    <p>受益人代繳保費：屬民法<strong>無因管理</strong>、不影響其他受益人保險金權利、<strong>不得</strong>要求排除其他受益人</p>
+    <p>告知義務違反 → 保險人得<strong>解除契約</strong>，<strong>無須</strong>退還保費。</p>
+    <p>非因要保人/被保險人行為致危險增加 → 未及時通知 → 對保險人損失<strong>應負賠償</strong>。</p>
+    <p>保險人對因履行<strong>道德上義務</strong>所致損害 → <strong>負</strong>賠償責任。</p>
+    <p>僅<strong>要保人</strong>知悉危險已發生 → 保險人得請求償還費用，已收保費無須返還。</p>
+    <p>特約條款：當事人違背 → 他方得解除契約（即使危險已發生）。但須故意/過失才可據為解約。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">2.6</span><span class="tt">各類保險專章差異</span></div>
+  <div class="tb">
+    <table class="ct">
+      <tr><th></th><th>寬限期間</th><th>訴訟請求保費</th><th>利害關係人代繳</th></tr>
+      <tr><td><key>人壽保險</key></td><td>適用</td><td>得</td><td>得</td></tr>
+      <tr><td><key>傷害保險</key></td><td>適用</td><td>得</td><td>得</td></tr>
+      <tr><td><key>健康保險</key></td><td>適用</td><td>得</td><td>得</td></tr>
+      <tr><td><key>年金保險</key></td><td><strong>不適用</strong></td><td><strong>不得</strong></td><td>得</td></tr>
+    </table>
+    <p><memo>年金三特殊</memo>：不適用寬限期、不得訴訟請求保費、利害關係人得代繳。</p>
+    <p>由第三人訂立之年金保險，未經被保險人書面同意並約定保險金額 → 契約<strong>仍有效</strong>（與死亡保險不同！）</p>
+    <p>傷害保險事故日起 <nb>180天</nb> 內致死亡/失能 → 保險公司負責。</p>
+  </div></div>
+</div>
+
+<!-- ══════════ Ch3 ══════════ -->
+<div class="ch" id="c3">
+  <div class="ch-hdr"><span class="badge b-y">79題·12.0%</span><div><div class="ch-t">第三章 · 稅法與遺產相關法規</div><div class="ch-m">猜(3) 33%</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">3.1</span><span class="tt">遺產稅扣除額（必背數字）</span><span class="tf">超高頻</span></div>
+  <div class="tb">
+    <table class="ct">
+      <tr><th>項目</th><th>扣除額</th></tr>
+      <tr><td><key>配偶</key></td><td><nb>400 萬</nb></td></tr>
+      <tr><td><key>父母</key>（每人）</td><td><nb>100 萬</nb></td></tr>
+      <tr><td><key>祖父母</key>（每人）</td><td><nb>40 萬</nb></td></tr>
+      <tr><td><key>成年子女</key>（每人）</td><td><nb>40 萬</nb></td></tr>
+      <tr><td>未成年子女</td><td>40萬 + 每差1歲加40萬</td></tr>
+    </table>
+    <p>例：遺有成年子女1名及母親 → 40+100＝<nb>140 萬</nb></p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">3.2</span><span class="tt">保險金與遺產稅的關鍵規則</span></div>
+  <div class="tb">
+    <div class="fm">
+      <strong>有</strong>指定受益人 → 死亡保險金 <strong>不計入</strong>遺產<br>
+      <strong>未</strong>指定受益人 → 死亡保險金 <strong>計入</strong>遺產
+    </div>
+    <p>被保險人早於受益人身故 → 保險金歸<strong>受益人</strong>。受益人再身故 → 成為<strong>受益人之遺產</strong>（非被保險人遺產）。</p>
+    <p>贈與稅：夫妻間贈與<strong>不計入</strong>贈與總額。婚嫁贈與 ≤ <nb>100 萬</nb> 也不計入。</p>
+    <p>例：老王贈子房屋2000萬＋贈妻轎車200萬＋贈女出嫁禮金80萬 → 課稅贈與總額＝<nb>2000 萬</nb>（夫妻免計、婚嫁80萬<100萬免計）</p>
+    <p>遺產稅繳納方式：①現金 ②實物抵繳 ③分期繳納</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">3.3</span><span class="tt">保費扣除額</span></div>
+  <div class="tb">
+    <p>每人每年保費列舉扣除額 <nb>24,000 元</nb>（全民健保費不受此限）</p>
+    <p>可扣除的保費：為本人、配偶、<strong>受其扶養之直系血親尊親屬</strong>繳納之壽險保費</p>
+    <p><trap>陷阱</trap> 以下<strong>不可</strong>扣除：①<strong>兄弟姊妹</strong>的壽險保費 ②非同一申報戶 ③境外保單（未經核准在台銷售）④非人身保險（汽車/火災/責任保險）</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">3.4</span><span class="tt">繼承順序與特留分</span></div>
+  <div class="tb">
+    <p>法定繼承順位：①直系血親卑親屬（子女）②父母 ③兄弟姊妹 ④祖父母。<strong>配偶＝當然繼承人</strong>。</p>
+    <p>母與父離婚 → 子女仍對父母有繼承權。男子入贅 → <strong>保有</strong>對父母繼承權。繼父母與繼子女 → <strong>不得</strong>相互繼承。</p>
+  </div></div>
+</div>
+
+<!-- ══════════ Ch4 ══════════ -->
+<div class="ch" id="c4">
+  <div class="ch-hdr"><span class="badge b-g">51題·7.8%</span><div><div class="ch-t">第四章 · 金融消費者保護與合規</div><div class="ch-m">猜(1) 27%</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">4.1</span><span class="tt">金融消費者保護法</span></div>
+  <div class="tb">
+    <p>契約條款顯失公平 → 該部分<strong>無效</strong>。條款疑義 → <strong>有利於</strong>金融消費者解釋。</p>
+    <p>金融服務業責任<strong>不得預先約定限制或免除</strong>，違反者無效。</p>
+    <p>金融教育宣傳<strong>不得引薦個別金融商品</strong>。</p>
+    <p>評議成立且經法院核可後：不得再起訴、不得再評議。如有無效原因<strong>得</strong>提起撤銷之訴。</p>
+    <p>酬金制度：<strong>不應僅</strong>以業績為基礎，應納入稽核缺失、客訴、KYC等<strong>非財務指標</strong>。</p>
+    <p><trap>陷阱</trap>「一賣出就發高額酬金」→ 不符衡平原則。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">4.2</span><span class="tt">洗錢防制（低風險交易情境）</span></div>
+  <div class="tb">
+    <p>低洗錢風險（可簡化審查）：①不具保單價值準備金之保險 ②微型/小額終老保險 ③團體年金/定壽/傷害/健康/醫療保險 ④客戶無高風險且年繳 <nb>≤3萬</nb>（躉繳 <nb>≤7.5萬</nb>）⑤強制車險/農業保險/小額財產保險（≤5萬）</p>
+    <p><trap>陷阱</trap>「具有保單價值準備金」→ <strong>非</strong>低風險。「結構型商品」→ 非低風險。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">4.3</span><span class="tt">定型化契約與審閱期、公平待客、個資法</span></div>
+  <div class="tb">
+    <p>定型化契約：企業<strong>單方面</strong>預先擬具（非雙方共同議定）。消費者僅有簽與否的權利。</p>
+    <p>壽險商品審閱期 ≥ <nb>3 日</nb>。<trap>陷阱</trap>「保戶可主動放棄審閱權」→ <strong>不可</strong>。未提供審閱期 → 定型化契約<strong>無效</strong>。但有提供者仍<strong>須</strong>提供契約撤銷權。</p>
+    <p>公平待客：<nb>9大原則＋第10項</nb>（董事會重視）。訓練每年 ≥ <nb>3小時</nb>（<trap>陷阱</trap>非2小時）。未完成 → 撤銷登錄。</p>
+    <p>個資法目的：規範蒐集、處理及利用，兼顧權益保護與合理利用。<trap>陷阱</trap>「禁止蒐集或無限制保護」→ 錯。</p>
+  </div></div>
+</div>
+
+<!-- ══════════ Ch5 ══════════ -->
+<div class="ch" id="c5">
+  <div class="ch-hdr"><span class="badge b-g">50題·7.6%</span><div><div class="ch-t">第五章 · 業務員管理與招攬規範</div><div class="ch-m">猜(2) 34% · 選(4)最冷 12%</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">5.1</span><span class="tt">登錄制度</span><span class="tf">出現19次</span></div>
+  <div class="tb">
+    <p>每 <nb>5 年</nb> 完成教育訓練並換發登錄證。</p>
+    <p>可登錄機構：壽險公司、保險代理人公司、保險經紀人公司、兼營保險經紀/代理之銀行</p>
+    <p><trap>陷阱</trap>「壽險公會」→ <strong>非</strong>登錄機構。</p>
+    <p>不得登錄：①文件虛偽 ②受破產宣告未復權 ③受同類保險停招期限內</p>
+    <p><trap>陷阱</trap>「產險受停招處分」→ 產險非同類，<strong>不影響</strong>壽險登錄。</p>
+    <p>再登錄：①註銷後轉任 ②停招期滿後重新登錄</p>
+    <p>曾受<strong>第13條撤銷登錄</strong> → 須重新通過資格測驗。曾受<strong>第19條撤銷登錄</strong> → 不可立即重新報名。</p>
+    <p>法令遵循課程：<strong>保發中心</strong>製作數位課程。冒名 → <strong>撤銷登錄</strong>。不參加商品說明會 → <strong>非</strong>撤銷登錄事由。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">5.2</span><span class="tt">三種保險中介人</span></div>
+  <div class="tb">
+    <table class="ct">
+      <tr><th>角色</th><th>立場</th><th>收入來源</th></tr>
+      <tr><td><key>保險經紀人</key></td><td>基於<strong>被保險人</strong>利益</td><td>向保險公司收取<strong>佣金</strong></td></tr>
+      <tr><td><key>保險代理人</key></td><td>代理<strong>保險公司</strong></td><td>向保險公司收取佣金</td></tr>
+      <tr><td><key>保險公證人</key></td><td>中立第三方</td><td>查勘鑑定估價而予證明</td></tr>
+    </table>
+    <p>產險經紀人業務員取得人身保險資格 → 得<strong>無條件</strong>登錄另一壽險<strong>經紀人</strong>公司（同類型才可無條件）。</p>
+    <p>保險業務員同時有人身/財產資格 → 仍<strong>不得</strong>同時為壽險及產險公司招攬。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">5.3</span><span class="tt">招攬文件保存與異動</span></div>
+  <div class="tb">
+    <p>招攬文件保存 ≥ 契約期滿或不同意承保後 <nb>5 年</nb></p>
+    <p>業務員管理規則依保險法<strong>§177</strong>訂定，民國81年10月15日發布，<strong>82年4月15日</strong>實施。</p>
+  </div></div>
+</div>
+
+<!-- ══════════ 附錄 ══════════ -->
+<div class="ch" id="ca">
+  <div class="ch-hdr"><span class="badge b-g">23題·3.5%</span><div><div class="ch-t">附錄 · 保險業法關鍵數字</div><div class="ch-m">猜(1) 命中率 43%</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">A.1</span><span class="tt">必背數字表</span><span class="tf">必考</span></div>
+  <div class="tb">
+    <table class="ct">
+      <tr><th>項目</th><th>數字</th><th>出處</th></tr>
+      <tr><td>資本適足率最低</td><td><nb>≥ 200%</nb></td><td>保險法</td></tr>
+      <tr><td>資本嚴重不足</td><td><nb>&lt; 50%</nb> 或淨值 &lt; 0</td><td></td></tr>
+      <tr><td>保證金繳存國庫</td><td>資本實收總額 <nb>15%</nb></td><td>§141</td></tr>
+      <tr><td>法定盈餘公積</td><td><nb>20%</nb></td><td>（達資本總額時免提）</td></tr>
+      <tr><td>不動產投資（除自用）</td><td><nb>≤ 30%</nb></td><td>§146-2</td></tr>
+      <tr><td>金融債券等</td><td><nb>≤ 35%</nb></td><td>§146-1</td></tr>
+      <tr><td>國外投資</td><td><nb>≤ 45%</nb></td><td>§146-4</td></tr>
+      <tr><td>人身保險合作社</td><td><nb>≥ 500 人</nb></td><td>（財產300人）</td></tr>
+    </table>
+    <p><memo>記法</memo>：保<strong>15</strong>/盈<strong>20</strong>/地<strong>30</strong>/債<strong>35</strong>/外<strong>45</strong>（5的倍數遞增）</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">A.2</span><span class="tt">團體保險</span></div>
+  <div class="tb">
+    <p>團體＝ <nb>5人以上</nb> ＋ <strong>非</strong>以購買保險為目的之組織</p>
+    <p>異動加保：書面通知，自<strong>通知到達翌日零時</strong>起生效（如起保日在後則以起保日零時）。</p>
+    <p>危險顯著增加：要保人知悉後 <nb>2 週</nb> 內通知。保險人 <nb>30日</nb> 內得要求增加保費或終止。</p>
+    <p>人數不足：保險人得終止並按日數比例退還未滿期保費。</p>
+    <p>涉訟 → <strong>不得</strong>排除小額訴訟管轄法院。</p>
+    <p>請領身故保險金：死亡證明＋除戶戶籍謄本、保險金申請書、受益人身分證明。<trap>陷阱</trap>「印鑑證明」→ <strong>非</strong>必要。</p>
+    <p>請領失能保險金：失能診斷書、保險金申請書、受益人身分證明。<trap>陷阱</trap>「印鑑證明」→ <strong>非</strong>必要。</p>
+    <p>保險合作社之保險契約以參加保單紅利者為限。保險公司<strong>得</strong>簽訂參加保單紅利之契約（非以此為限）。</p>
+    <p>接管期間主管機關得限制：新業務承接、有效保單變更或終止、保單借款、解約金。</p>
+    <p>涉及外匯業務 → 須經<strong>中央銀行</strong>許可（非金管會）。</p>
+    <p>保險金信託：要保人於保險事故發生<strong>前</strong>預先洽定（非訂立契約時同時洽訂）。</p>
+  </div></div>
+</div>
+
+<div class="footer">
+  <p>保險法規 389 題（5章＋附錄）完整考點萃取</p>
+  <p style="margin-top:4px">所有 <span style="color:var(--blue)">key</span> 必背概念 · <span style="color:var(--red)">trap</span> 陷阱標記 · <span style="color:var(--sage)">memo</span> 記憶口訣</p>
+</div>
+
+</div>
+</body>
+</html>
