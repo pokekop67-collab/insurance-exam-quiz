@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>核心考點 · 保險實務（267題）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F5F2;--card:#FFF;--acc:#EDE8E2;--t1:#2C2825;--t2:#7A746D;--t3:#A9A29A;--warm:#C4956A;--rose:#BF8B8B;--sage:#8FA391;--blue:#7E9AB5;--plum:#9E8BA8;--bdr:#E5E0DA;--red:#D4654A;--yel:#D4A94A;--grn:#6B9E76;--sh:0 1px 3px rgba(44,40,37,.06);--r:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--t1);line-height:1.9;font-weight:400}
+.container{max-width:860px;margin:0 auto;padding:40px 24px 100px}
+.hero{text-align:center;padding:60px 20px 40px;position:relative}
+.hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:40px;background:var(--warm)}
+.hero h1{font-family:'Noto Serif TC',serif;font-size:clamp(24px,4vw,36px);font-weight:700;letter-spacing:2px;line-height:1.4;margin-bottom:8px}
+.hero h1 em{font-style:normal;color:var(--warm)}
+.hero-sub{font-size:13px;color:var(--t2);font-weight:300;margin-bottom:16px}
+.hero-stats{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
+.hero-stat{text-align:center}
+.hero-stat .n{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:600;color:var(--warm)}
+.hero-stat .l{font-size:11px;color:var(--t3);letter-spacing:1px}
+.nav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--bdr);padding:12px 0;margin-bottom:32px;overflow-x:auto;white-space:nowrap;text-align:center}
+.nav a{display:inline-block;padding:6px 14px;font-size:12px;color:var(--t2);text-decoration:none;border-radius:100px;font-weight:500;transition:all .2s}
+.nav a:hover,.nav a.act{background:var(--warm);color:#fff}
+.ch{margin-bottom:56px;scroll-margin-top:80px}
+.ch-hdr{display:flex;align-items:center;gap:16px;margin-bottom:24px;padding-bottom:16px;border-bottom:2px solid var(--bdr)}
+.badge{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;padding:4px 10px;border-radius:100px;letter-spacing:1px;flex-shrink:0}
+.b-r{background:rgba(212,101,74,.12);color:var(--red)}.b-y{background:rgba(212,169,74,.12);color:var(--yel)}.b-g{background:rgba(107,158,118,.12);color:var(--grn)}
+.ch-t{font-family:'Noto Serif TC',serif;font-size:20px;font-weight:700}
+.ch-m{font-size:12px;color:var(--t3);margin-top:2px}
+.topic{background:var(--card);border:1px solid var(--bdr);border-radius:var(--r);padding:24px;margin-bottom:16px;box-shadow:var(--sh)}
+.th{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.tn{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--warm);font-weight:600;width:28px;flex-shrink:0}
+.tt{font-size:15px;font-weight:700}
+.tf{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--t3);margin-left:auto;flex-shrink:0;background:rgba(212,101,74,.08);padding:2px 8px;border-radius:100px;color:var(--red)}
+.tb{padding-left:38px;font-size:14px;color:var(--t2);line-height:2}
+.tb strong{color:var(--t1);font-weight:600}
+.key{display:inline-block;background:rgba(196,149,106,.1);border:1px solid rgba(196,149,106,.2);border-radius:4px;padding:1px 6px;font-size:13px;font-weight:600;color:var(--warm);margin:0 1px}
+.trap{display:inline-block;background:rgba(212,101,74,.08);border:1px solid rgba(212,101,74,.15);border-radius:4px;padding:1px 6px;font-size:13px;font-weight:600;color:var(--red);margin:0 1px}
+.memo{display:inline-block;background:rgba(143,163,145,.1);border:1px solid rgba(143,163,145,.2);border-radius:4px;padding:1px 6px;font-size:13px;font-weight:600;color:var(--sage);margin:0 1px}
+.nb{display:inline-flex;align-items:center;background:var(--card);border:1px solid var(--bdr);border-radius:6px;padding:3px 10px;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;color:var(--warm);margin:1px 2px}
+table.ct{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+.ct th{background:var(--acc);padding:8px 12px;font-size:11px;color:var(--t3);letter-spacing:1px;font-weight:500;border-bottom:2px solid var(--bdr);text-align:left}
+.ct td{padding:8px 12px;border-bottom:1px solid var(--acc);vertical-align:top}
+.ct tr:last-child td{border-bottom:none}
+.fm{background:var(--acc);border-radius:8px;padding:16px 20px;margin:12px 0;font-size:13px;line-height:2;border-left:3px solid var(--warm)}
+.fm strong{color:var(--warm)}
+.divider{display:flex;align-items:center;gap:16px;margin:48px 0;color:var(--t3);font-size:11px;letter-spacing:3px}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--bdr)}
+.footer{text-align:center;padding:40px 20px;color:var(--t3);font-size:12px;border-top:1px solid var(--bdr);margin-top:60px}
+.ans{display:flex;gap:8px;margin:12px 0}.ans-c{flex:1;text-align:center;padding:6px 4px;border-radius:8px;background:var(--acc);font-family:'JetBrains Mono',monospace;font-size:12px}
+.ans-c .v{font-weight:600;font-size:15px;display:block}.ans-c .l{font-size:10px;color:var(--t3)}
+.ans-c.hot{background:rgba(212,101,74,.1);border:1px solid rgba(212,101,74,.2)}
+.ans-c.cold{background:rgba(126,154,181,.1);border:1px solid rgba(126,154,181,.2)}
+@media(max-width:640px){.container{padding:20px 16px 80px}.topic{padding:18px}.tb{padding-left:0}.hero-stats{gap:16px}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="hero">
+  <h1>保險實務<em>核心考點</em></h1>
+  <p class="hero-sub">7 章 + 附錄 · 267 題完整萃取 · 陷阱標記 + 記憶口訣</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="n">267</div><div class="l">總題數</div></div>
+    <div class="hero-stat"><div class="n">8</div><div class="l">區塊</div></div>
+    <div class="hero-stat"><div class="n">(3)</div><div class="l">猜題首選 31.5%</div></div>
+    <div class="hero-stat"><div class="n">(4)</div><div class="l">最冷 17.2%</div></div>
+  </div>
+</div>
+
+<div class="nav">
+  <a href="#c1">Ch1 風險管理</a>
+  <a href="#c2">Ch2 保險功能</a>
+  <a href="#c3">Ch3 壽險市場</a>
+  <a href="#c4">Ch4 保費費率</a>
+  <a href="#c5" class="act">Ch5 保險商品</a>
+  <a href="#c6">Ch6 核保招攬</a>
+  <a href="#c7">Ch7 保障規劃</a>
+  <a href="#ca">附錄</a>
+</div>
+
+<!-- ══════════ Ch1 ══════════ -->
+<div class="ch" id="c1">
+  <div class="ch-hdr"><span class="badge b-g">31題·4.7%</span><div><div class="ch-t">第一章 · 風險管理與保險概論</div><div class="ch-m">猜(3) 32% · 選(4)最冷 19%</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">1.1</span><span class="tt">風險的定義與要件</span></div>
+  <div class="tb">
+    <p>風險三要件：<strong>①結果具不確定性</strong>（非確定性）、<strong>②有損失發生的可能</strong>、<strong>③屬於將來性</strong></p>
+    <p><trap>陷阱</trap>「結果必須為確定性」→ 錯。「損失金額必須龐大且可金錢衡量」→ 錯（不限龐大，也含無形損失）。</p>
+    <p>損失：<strong>有形</strong>（可金錢衡量）+ <strong>無形</strong>（精神痛苦）。保險可保之損失＝因<strong>意外事故</strong>造成。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">1.2</span><span class="tt">風險分類體系（六大分法）</span><span class="tf">超高頻</span></div>
+  <div class="tb">
+    <table class="ct">
+      <tr><th>分類法</th><th>類型 A</th><th>類型 B</th></tr>
+      <tr><td><strong>損失性質</strong></td><td><key>純粹風險</key>：只有損失，無獲利</td><td><key>投機風險</key>：可能損失也可能獲利</td></tr>
+      <tr><td><strong>影響範圍</strong></td><td><key>基本風險</key>：波及大、難控制（地震）<br>純粹+投機<strong>兼有</strong></td><td><key>特定風險</key>：只影響個人、易控制<br>常屬<strong>純粹風險</strong></td></tr>
+      <tr><td><strong>可衡量性</strong></td><td><key>客觀風險</key>：可統計、不受人為故意影響</td><td><key>主觀風險</key>：因人而異</td></tr>
+      <tr><td><strong>變動性</strong></td><td><key>靜態風險</key>：與社會變動無關</td><td><key>動態風險</key>：受社會經濟政治影響</td></tr>
+    </table>
+    <p><memo>必背</memo> 天然災害（地震）＝ <strong>客觀＋純粹＋靜態＋基本</strong>風險</p>
+    <p><key>基本風險</key>是唯一兼有純粹與投機雙重性質的分類。</p>
+    <p><trap>陷阱</trap>「特定風險與經濟、政治、天然災害有關」→ 錯，那是基本風險。特定風險只影響個人。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">1.3</span><span class="tt">損失頻率 vs 損失幅度</span><span class="tf">經典陷阱</span></div>
+  <div class="tb">
+    <div class="fm">
+      <strong>損失頻率</strong>＝一定期間內每一風險單位發生事故的平均<strong>「次數」</strong><br>
+      <strong>損失幅度</strong>＝每一次損失事故的平均<strong>「金額」</strong>（又稱損失額度）<br>
+      <strong>損失成本</strong>＝ 頻率 × 幅度
+    </div>
+    <p><trap>陷阱</trap> 題目最愛將兩者定義<strong>互換</strong>！「平均損失金額」→ 幅度，「平均次數」→ 頻率。</p>
+    <table class="ct">
+      <tr><th></th><th>幅度高</th><th>幅度低</th></tr>
+      <tr><td><strong>頻率高</strong></td><td><key>特別嚴重</key>風險</td><td><key>重要</key>風險</td></tr>
+      <tr><td><strong>頻率低</strong></td><td><key>重要</key>風險</td><td>不重要風險</td></tr>
+    </table>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">1.4</span><span class="tt">風險管理四步驟與五方法</span></div>
+  <div class="tb">
+    <p><memo>四步驟</memo>：風險<strong>確認</strong> → 風險<strong>衡量</strong> → 風險方法<strong>選擇</strong> → 決策<strong>執行</strong>與評估</p>
+    <p><trap>陷阱</trap>「風險衡量」屬第二步，非第一步。</p>
+    <table class="ct">
+      <tr><th>方法</th><th>時間點</th><th>說明</th><th>經典例題</th></tr>
+      <tr><td><key>避免</key></td><td>事前</td><td>最簡單經濟安全</td><td>不去夜市/觀光景點</td></tr>
+      <tr><td><key>預防</key></td><td>事前</td><td>降低發生機會</td><td>高血壓少油少鹽、勤洗手戴口罩</td></tr>
+      <tr><td><key>抑制</key></td><td>事中/事後</td><td>減輕損失程度</td><td>發燒去篩檢、自主管理</td></tr>
+      <tr><td><key>移轉</key></td><td>事前</td><td>轉嫁給保險公司</td><td>購買保險（非年金型）</td></tr>
+      <tr><td><key>自留</key></td><td>—</td><td>自己承擔</td><td>保額不足的部分</td></tr>
+    </table>
+    <p><trap>陷阱</trap> 購買<strong>年金型</strong>保險 ≠ 移轉，屬「儲蓄投資以備未來所需」。</p>
+    <p><trap>陷阱</trap>「高血壓不吃太油膩」→ 事前<strong>預防</strong>，非事中抑制。</p>
+    <p>風險自留原因（四個全都是）：①疏忽不處理 ②自己承擔較划算 ③無適當方式 ④有能力承擔</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">1.5</span><span class="tt">風險因素三分法</span></div>
+  <div class="tb">
+    <table class="ct">
+      <tr><th>類型</th><th>性質</th><th>定義</th><th>舉例</th></tr>
+      <tr><td><key>實質風險</key></td><td>有形</td><td>物理條件增加風險</td><td>老舊建築</td></tr>
+      <tr><td><key>道德風險</key></td><td>無形</td><td><strong>故意</strong>不當得利</td><td>縱火騙保</td></tr>
+      <tr><td><key>心理風險</key></td><td>無形</td><td><strong>疏忽</strong>/不小心</td><td>投保後不維護房子</td></tr>
+    </table>
+    <p><memo>記法</memo>：道德＝故意＝犯罪級；心理＝疏忽＝懶人級</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">1.6</span><span class="tt">保險稅務優惠</span></div>
+  <div class="tb">
+    <p>①保費一定金額內可自綜合所得額<strong>扣除</strong> ②<strong>有</strong>指定受益人 → 死亡保險金<strong>不計入</strong>遺產 ③<strong>未</strong>指定受益人 → <strong>計入</strong>遺產 ④滿期保險金免課<strong>所得稅</strong></p>
+    <p><trap>陷阱</trap>「滿期保險金不用課遺產稅」→ 表述不當，滿期金跟遺產稅無關，正確是免所得稅。</p>
+    <p>人身風險事故導致：遺族生活費用<strong>增加</strong>、老年退休費用<strong>增加</strong>（非減少）、醫療費用增加、收入減少。</p>
+  </div></div>
+</div>
+
+<!-- ══════════ Ch2 ══════════ -->
+<div class="ch" id="c2">
+  <div class="ch-hdr"><span class="badge b-g">6題·0.9%</span><div><div class="ch-t">第二章 · 保險功能</div><div class="ch-m">題少，快速掃過</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">2.1</span><span class="tt">人身保險功能體系</span></div>
+  <div class="tb">
+    <table class="ct">
+      <tr><th>對象</th><th>功能</th></tr>
+      <tr><td><strong>對個人</strong></td><td>後顧無憂/晚景可恃、<key>保證信用/有利投資</key>、安定就業/穩定發展、享受優惠/稅捐減免、保險理財</td></tr>
+      <tr><td><strong>對社會</strong></td><td>鼓勵儲蓄/平均財富、互助共濟/社會安寧</td></tr>
+      <tr><td><strong>對國家</strong></td><td>形成資本/增國富、穩定經濟/安定政治、透過再保/拓展外交、健全經營/整合金融</td></tr>
+    </table>
+    <p>投保者在任何意外事故時都有經濟保障 → 確定了<strong>信用和償債能力</strong>＝「保證信用，有利投資」</p>
+    <p>保險是風險<strong>移轉</strong>，<strong>非</strong>避免風險。</p>
+    <p><trap>陷阱</trap>「互助共濟、社會安寧」是對<strong>社會</strong>的功能，非對國家。</p>
+    <p>投資型保險可：①有效對抗通貨膨脹 ②使資金運用及退休計畫更具彈性 ③降低壽險公司經營風險 ④達到金融市場整合功能（<strong>以上皆是</strong>）</p>
+    <p>最新責任準備金提存標準：<key>臺灣壽險業第六回經驗生命表</key>。</p>
+    <p><key>國民生命表</key>＝<strong>內政部</strong>以全國國民為對象依人口普查編製。</p>
+  </div></div>
+</div>
+
+<!-- ══════════ Ch3 ══════════ -->
+<div class="ch" id="c3">
+  <div class="ch-hdr"><span class="badge b-g">20題·3.0%</span><div><div class="ch-t">第三章 · 壽險市場趨勢</div><div class="ch-m">猜(2)或(4) 35%</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">3.1</span><span class="tt">市場趨勢重點</span></div>
+  <div class="tb">
+    <p>婦女在家庭經濟上掌握更多權力 → 婦女壽險市場<strong>逐漸受到重視</strong>（非躍居主導地位）。</p>
+    <p>壽險公司將商品<strong>細分化</strong>，以滿足消費者特殊需要（依年齡、性別、職業設計）。</p>
+    <p>目前國內保險市場經營壽險業務之組織<strong>均為股份有限公司</strong>。</p>
+    <p>金融科技應用：①行動裝置締結契約 ②數據分析細分客戶/差異化商品 ③<key>外溢保單</key>提升保戶健康 ④理賠連線醫院/第三方驗證，減少保險詐欺（<strong>全部都是</strong>）</p>
+    <p>壽險業總公司<strong>業務部</strong>掌理：承保、理賠、保費、分保、契約調查。（<strong>不含</strong>財務管理、人員監督管理）</p>
+    <p>保障型及高齡化保險商品四大類：①即期年金 ②進入給付期間之遞延年金 ③小額終老保險 ④無保單價值準備金之人身保險</p>
+    <p>壽險業在經營上應重視：①加強保險知識宣導 ②業務員教育訓練 ③提高效率降低成本（<strong>不含</strong>提高佣金比例）</p>
+  </div></div>
+</div>
+
+<!-- ══════════ Ch4 ══════════ -->
+<div class="ch" id="c4">
+  <div class="ch-hdr"><span class="badge b-y">45題·6.9%</span><div><div class="ch-t">第四章 · 保險費率與保單實務</div><div class="ch-m">猜(1) 命中率 42%！</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">4.1</span><span class="tt">保險費結構與三差損益</span></div>
+  <div class="tb">
+    <div class="fm">
+      <strong>保險費</strong> ＝ 純保險費 ＋ 附加費用<br>
+      <strong>純保險費</strong>：由<key>預定死亡率</key>＋<key>預定利率</key>計算（保障成本）<br>
+      <strong>附加費用</strong>：營業費用、佣金（<key>預定營業費用率</key>）<br><br>
+      三差損益：<strong>利差</strong>益（投資報酬 > 預定利率）、<strong>死差</strong>益（實際死亡率 < 預定）、<strong>費差</strong>益（實際費用 < 預定）
+    </div>
+    <p>保單紅利利源＝<strong>利差益＋死差益＋費差益</strong>之和，分紅回饋保戶。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">4.2</span><span class="tt">預定利率與保費關係</span></div>
+  <div class="tb">
+    <p><memo>反向關係</memo>：預定利率<strong>↑</strong> → 保費<strong>↓</strong>（預期投資收益高，少收保費即可）</p>
+    <p>自民國89年11月1日起考量：①險種特性 ②過去資金運用績效 ③未來投資規劃 ④社會經濟發展趨勢，壽險公司可<strong>自行訂定</strong>預定利率。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">4.3</span><span class="tt">生命表</span></div>
+  <div class="tb">
+    <table class="ct">
+      <tr><th>類型</th><th>編製者</th><th>基礎</th></tr>
+      <tr><td><key>國民生命表</key></td><td><strong>內政部</strong></td><td>全國國民人口普查</td></tr>
+      <tr><td><key>經驗生命表</key></td><td>壽險公會</td><td>被保險人實際經驗</td></tr>
+    </table>
+    <p>英國<strong>衡平保險社</strong>首先根據生命表計算合理保費 → 現代人壽保險制度建立。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">4.4</span><span class="tt">責任準備金與解約金</span></div>
+  <div class="tb">
+    <p><key>責任準備金</key>＝純保費扣除已過危險保費後提存保管，按險種計算記載於<strong>特設帳簿</strong>。</p>
+    <p>保險法各種準備金：<strong>賠款準備金、未滿期保費準備金、特別準備金</strong>（<trap>陷阱</trap>無「差額準備金」）</p>
+    <p>解約金：躉繳/分期繳費期間解約金 ≤ 保單價值準備金；繳費期滿後解約金 <strong>＝</strong> 保單價值準備金。</p>
+    <p>保單紅利「儲存生息」方式 → 被保險人死亡時保險金額與原保險金額<strong>一樣</strong>（不增不減）。</p>
+    <p>利率變動型年金累積期間：保費 − <strong>附加費用</strong> → 依宣告利率計算保單價值準備金。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">4.5</span><span class="tt">人身保險構成三原則</span></div>
+  <div class="tb">
+    <p>①互相扶助的觀念 ②公平的危險分擔 ③收支相等的原則</p>
+    <p><trap>陷阱</trap>「損失填補的作用」→ <strong>非</strong>人身保險構成原則（屬財產保險概念）。</p>
+    <p>保險是集合大多數人力量分散風險消化損失的社會互助經濟保障制度，是<strong>交換價值相等</strong>的契約（對全體投保者而言）。</p>
+  </div></div>
+</div>
+
+<!-- ══════════ Ch5 ══════════ -->
+<div class="ch" id="c5">
+  <div class="ch-hdr"><span class="badge b-r">95題·14.5%</span><div><div class="ch-t">第五章 · 保險商品總論</div><div class="ch-m">實務科最大章 · 猜(3) 命中率 41% · 選(4)僅 9%</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">5.1</span><span class="tt">年金保險分類</span><span class="tf">出現19次</span></div>
+  <div class="tb">
+    <table class="ct">
+      <tr><th>類型</th><th>說明</th></tr>
+      <tr><td><key>生存年金</key></td><td>被保險人生存期間持續給付</td></tr>
+      <tr><td><key>確定年金</key></td><td>不以生存為條件，約定期間一定給付</td></tr>
+      <tr><td><key>連生共存年金</key></td><td>受領人皆生存時給付，<strong>其中一人死亡即停止</strong></td></tr>
+      <tr><td><key>連生遺族年金</key></td><td>受領人之一死亡後繼續給付遺族</td></tr>
+      <tr><td><key>最後生存者年金</key></td><td>給付至最後一位受領人死亡</td></tr>
+    </table>
+    <p>被保險人死亡後未領餘額 → 給付<strong>身故受益人或其他應得之人</strong>。確定年金未指定受益人 → 為被保險人遺產。</p>
+    <p><memo>年金三大特殊</memo>：①<strong>不適用寬限期間</strong> ②保險費<strong>不得以訴訟請求</strong>交付 ③利害關係人<strong>得代</strong>交付保費</p>
+    <p>年金保險<strong>不得有除外責任原因</strong>，也<strong>不得有除外責任期間</strong>。</p>
+    <p><key>受益人限制</key>：失能/醫療/年金保險 → 受益人<strong>＝被保險人本人</strong>，不能指定變更。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">5.2</span><span class="tt">利率變動型年金 甲型 vs 乙型</span><span class="tf">高頻</span></div>
+  <div class="tb">
+    <table class="ct">
+      <tr><th></th><th>甲型</th><th>乙型</th></tr>
+      <tr><td><strong>累積期間</strong></td><td colspan="2">均無紅利給付</td></tr>
+      <tr><td><strong>給付期間</strong></td><td><strong>可</strong>採分紅或不分紅</td><td>通常無紅利</td></tr>
+      <tr><td><strong>年金計算</strong></td><td>預定死亡率＋預定利率</td><td>預定死亡率＋預定利率＋<key>宣告利率</key></td></tr>
+    </table>
+    <p><trap>陷阱</trap>「甲型於給付期間僅採不分紅」→ 錯，甲型<strong>可</strong>採分紅或不分紅。</p>
+    <p>宣告利率（109.7.1起）：①考量區隔資產帳戶固收利率 ②≥保證利率 ③考量資產配置及投資準則 ④<strong>不得為負數</strong></p>
+    <p>年金生命表死亡率 <nb>90%</nb> 為基礎計算責任準備金。</p>
+    <p>乙型於給付期間，年金金額以前一年度可領金額乘以當年度<strong>調整係數</strong>。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">5.3</span><span class="tt">投資型保險</span></div>
+  <div class="tb">
+    <p>核心特色：盈虧自負、彈性繳費、<key>分離帳戶</key></p>
+    <p>全權委託投資標的：公債/國庫券、臺灣存託憑證、各國中央政府公債</p>
+    <p><trap>陷阱</trap><strong>結構型商品＝非全委</strong>。這是超常考陷阱。</p>
+    <p>費用三類：①保險費用 ②保單管理費 ③投資相關費用（申購手續費、贖回費等）</p>
+    <p>專業課程測驗辦理：保發中心、主管機關認可之保險相關單位、壽險公會（<strong>皆可</strong>）</p>
+    <p>投資型保險帳戶價值有高低起伏但<strong>可能降低至零</strong>。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">5.4</span><span class="tt">長期照顧保險</span></div>
+  <div class="tb">
+    <p>免責期 ≤ <nb>6 個月</nb>　巴氏量表 ≥ <nb>3 項障礙</nb>　認知功能：<strong>MMSE</strong>評估，<strong>CDR</strong>達中度以上</p>
+    <p>六項日常能力：進食、移位、如廁、沐浴、平地移動、更衣</p>
+    <p>長期照顧保險保險人＝<strong>中央健康保險署</strong></p>
+    <p><trap>陷阱</trap> 109年11月金管會取消認知功能障礙相關舊規定。CDR需「中度以上」非輕度。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">5.5</span><span class="tt">傷害保險</span></div>
+  <div class="tb">
+    <p>失能保險金 ≤ <strong>保險金額</strong>（不論次數及程度）</p>
+    <p>事故發生日起 <nb>180 天</nb> 內致死亡/失能 → 保險公司負保險責任</p>
+    <p>日額型每次給付 ≤ <nb>180 日</nb>（超過但可證明因果關係者不在此限）</p>
+    <p>傷害保險之保費：<strong>適用</strong>寬限期間、保險人<strong>得</strong>訴訟請求、利害關係人<strong>得</strong>代繳</p>
+    <p><trap>陷阱</trap> 年金保險的三項特殊規定<strong>不適用</strong>於傷害保險！</p>
+    <p>生存保險：被保險人在保險期間內死亡 → 保險公司<strong>不負給付責任，但退還已繳保費</strong>。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">5.6</span><span class="tt">微型保險與外溢保單</span></div>
+  <div class="tb">
+    <p><key>微型保險</key>承保對象：①農民保險之農民 ②低/中低收入戶 ③身心障礙者 ④低收入老人 ⑤原住民 ⑥漁民</p>
+    <p>認定文件：中低收入證明、身心障礙手冊、漁船船員手冊、原住民戶籍</p>
+    <p><trap>陷阱</trap><strong>離島居民戶籍</strong>是居住所證明，<strong>非</strong>資格認定文件。</p>
+    <p><key>外溢保單</key>：穿戴裝置 → 改變生活作息 → 提升健康 → 啟動減費機制或健康促進獎勵金</p>
+    <p>實支實付醫療保險張數上限 <nb>3 張</nb>，不適用於微型保險、旅平險、學生團體保險。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">5.7</span><span class="tt">團體保險、國民年金、勞退</span></div>
+  <div class="tb">
+    <p><key>團體</key>＝ <nb>5人以上</nb> ＋ <strong>非</strong>以購買保險為目的之組織。<strong>不含</strong>團體責任保險。保費以<strong>平均保險費率</strong>計算。</p>
+    <p>團體傷害保險特別準備金提存率 <nb>2%</nb></p>
+    <p><key>國民年金</key>：年滿25歲、未滿65歲、國內有戶籍、<strong>未</strong>參加勞保/農保/公教保/軍保</p>
+    <p>國民年金五大保障：老年年金、身心障礙年金、遺屬年金、喪葬給付、生育給付</p>
+    <p>勞工退休金提繳率 ≥ 每月工資 <nb>6%</nb>（勞工得在6%內自願提繳）</p>
+    <p>高齡社會：民國107年。超高齡社會：預估民國114年。仰賴人口：<strong>0-14歲＋65歲以上</strong></p>
+    <p><trap>陷阱</trap>「仰賴人口係指0至14歲的人口」→ 不完整，須加上65歲以上。</p>
+    <p>全民健保：主管機關為<strong>衛生福利部</strong>；以強制投保為原則；保險人為<strong>中央健康保險署</strong></p>
+    <p>商品設計以提高<strong>保障機能</strong>為主：以<strong>定期壽險/傷害保險</strong>為主（非生死合險/儲蓄保險）</p>
+    <p>業務員登錄證分為 <strong>2 種</strong>：初次登錄證＋第6年度起登錄證。每 <nb>5 年</nb> 完成訓練換證。</p>
+  </div></div>
+</div>
+
+<!-- ══════════ Ch6 ══════════ -->
+<div class="ch" id="c6">
+  <div class="ch-hdr"><span class="badge b-g">28題·4.3%</span><div><div class="ch-t">第六章 · 核保與招攬實務</div><div class="ch-m">猜(2) 32%</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">6.1</span><span class="tt">核保三階段與業務員職責</span></div>
+  <div class="tb">
+    <p>三階段：①業務員選擇 → ②公司體檢醫師選擇 → ③核保人員選擇</p>
+    <p><trap>陷阱</trap>「生存調查人員的選擇」→ 非核保程序。</p>
+    <p>招攬範圍：①說明填寫要保書注意事項 ②轉送要保文件及保單 ③解釋商品內容及條款</p>
+    <p><trap>陷阱</trap>「收取續期保險費」→ <strong>不在</strong>授權招攬範圍。</p>
+    <p>業務員評估項目：①投保目的及需求 ②財務及承擔風險能力 ③要保人/被保險人/受益人關係 ④是否已投保其他保險</p>
+    <p>申請要保前應提供保戶：<strong>條款樣本、人壽保險投保人須知</strong>（<strong>不含</strong>保單紅利試算表、保險與定存比較表）</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">6.2</span><span class="tt">送金單與保費收取</span></div>
+  <div class="tb">
+    <p>有權代收保費：①保險公司授權業務員 ②保險代理人/其業務員 ③保險經紀人/其業務員</p>
+    <p><trap>陷阱</trap>「保險公司未登錄之收費員」→ <strong>無權</strong>代收。無保險業授權 → 不得代收。</p>
+    <p>收現金/支票 → 須同時交付<strong>送金單、預收保費證明或收據</strong></p>
+    <p>支票發票人非要保人/被保險人/受益人 → 次月底前依 <nb>1%</nb> 或不低於 <nb>500件</nb> 抽樣聯繫</p>
+    <p>以支票繳第一次保費，退票 → 保險契約<strong>不發生效力</strong></p>
+    <p>要保書：要保人/被保險人須<strong>親簽</strong>。業務員<strong>不得</strong>代為填寫及代簽名。親自按指印＝與親簽效力相同。</p>
+    <p>逾期送金單繳回規定：有權代收之人未將所領送金單繳回 → 保險業<strong>不得再發給</strong>。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">6.3</span><span class="tt">告知義務與體檢</span></div>
+  <div class="tb">
+    <p>核保審查文件：①體檢醫師報告書 ②生存調查員報告 ③保戶要保文件 ④業務員報告書（<strong>全部都是</strong>）</p>
+    <p>家族病史：①有人患<strong>遺傳性疾病</strong> ②有人從事<strong>危險職業</strong>。<trap>陷阱</trap>「家人是否已投保」→ <strong>非</strong>家族病史項目。</p>
+    <p>體檢必要：依<strong>年齡、保額</strong>決定。「要保人與被保人非同一人」→ <strong>不是</strong>體檢必要條件。</p>
+    <p>業務員<strong>不得</strong>妨礙體檢；被保險人應據實告知既往症、現症。<strong>不得</strong>隱瞞既往症以利核保。</p>
+    <p>業務員接受投保時，必須<strong>親自會晤被保險人</strong>。</p>
+  </div></div>
+</div>
+
+<!-- ══════════ Ch7 ══════════ -->
+<div class="ch" id="c7">
+  <div class="ch-hdr"><span class="badge b-g">34題·5.2%</span><div><div class="ch-t">第七章 · 保障規劃與售後服務</div><div class="ch-m">猜(3) 命中率 41% · 選(1)最冷 12%</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">7.1</span><span class="tt">保單活化制度</span><span class="tf">高頻</span></div>
+  <div class="tb">
+    <p>定義：用原保單保單價值準備金轉換為醫療/長照/年金保險。屬<strong>功能性轉換</strong>（他益型→自益型）。</p>
+    <p>轉換後預定利率變<strong>低</strong> → 保費成本<strong>提高</strong>。部分保單解約扣稅後<strong>可能比轉換更划算</strong>。</p>
+    <p>需<strong>要保人及被保險人</strong>親自簽章（非僅要保人）。</p>
+    <p><trap>陷阱</trap>「保單活化對客戶百利無一害」→ 錯。可能領到的總額低於轉換前。</p>
+    <p>不得回復原契約：①已開始給付/有理賠紀錄 ②原保險事故已發生 ③轉換生效日起 <nb>3年</nb> 後才主張</p>
+    <p>變更適合度評估：確認對象含要保人<strong>及</strong>被保險人。</p>
+  </div></div>
+
+  <div class="topic"><div class="th"><span class="tn">7.2</span><span class="tt">保障需求分析與行銷</span></div>
+  <div class="tb">
+    <p>保障需求：①遺族生活資金（以丈夫死亡時妻子平均餘命計算）②晚年生活 ③教育基金 ④購屋 ⑤借款償還金</p>
+    <p>應急預備金：醫療/喪亡處理/借款償還/臨時預備金。<trap>陷阱</trap>「子女教育金」→ <strong>非</strong>應急預備金。</p>
+    <p>保費原則：年收入 <nb>1/10</nb>；保額參考：年收入 <nb>10倍</nb></p>
+    <p>行銷通路市占：壽險公司 49% > 銀行保險 37% > 經紀人</p>
+    <p>行銷過程：<strong>接近→問題→解決→決心→滿意</strong>（口訣：接問解決滿）</p>
+    <p>招攬程序：蒐集資料/發現問題 → 提示對策 → 成交/售後</p>
+    <p>售後服務開端＝<strong>遞交客戶保單</strong></p>
+    <p><key>保險存摺</key>：保險商業同業公會推出，查詢保單。可看保障缺口、申請理賠、查詢各保險公司保單。</p>
+    <p><key>保險經紀人</key>＝向承保保險業收取佣金之人。</p>
+    <p>業務員同時擁有人身/財產保險資格 → 仍<strong>不得</strong>同時為壽險公司及產險公司招攬。</p>
+    <p>招攬文件保存 ≥ 契約期滿或不同意承保後 <nb>5 年</nb></p>
+    <p>團體保險保費可自薪津扣除、可提高繼續率。但仍<strong>須經核保</strong>評估。</p>
+    <p>保險業除傳統通路外的行銷管道：郵寄行銷、電話行銷、職域/關係企業行銷、架設網路平台行銷</p>
+    <p>借款償還金＝每月償還額 × 償還期間</p>
+  </div></div>
+</div>
+
+<!-- ══════════ 附錄 ══════════ -->
+<div class="ch" id="ca">
+  <div class="ch-hdr"><span class="badge b-g">8題·1.2%</span><div><div class="ch-t">附錄 · 綜合題</div><div class="ch-m">猜(1) 命中率 62%</div></div></div>
+
+  <div class="topic"><div class="th"><span class="tn">A.1</span><span class="tt">附錄重點整理</span></div>
+  <div class="tb">
+    <p>未滿15歲喪葬費用保險金額（不限同一保險公司）→ 不得超過遺產稅喪葬費扣除額之<strong>一半</strong>。超過部分不負給付責任，<strong>無息退還</strong>已繳保費。</p>
+    <p>中途解約退還未到期保費的保險：<strong>一年定期壽險、健康保險、傷害保險</strong>（扣除已過期保費後退未滿期部分）。長期壽險解約則退<strong>解約金</strong>。</p>
+    <p>年金保險被保險人身故且尚有未領年金餘額 → 給付<strong>身故受益人或其他應得之人</strong>。</p>
+    <p>某甲投保每年複利增值3%之20年養老保險，保額20萬，第二年死亡：20萬 × 1.03 × 1.03 ＝ <nb>212,180</nb></p>
+    <p>團體保險請領失能保險金需檢具：失能診斷書、保險金申請書、受益人身分證明。<trap>陷阱</trap>「印鑑證明」→ <strong>非</strong>必要。</p>
+    <p>年金保險契約：①得由本人或第三人訂立 ②利害關係人得代繳保費 ③保險人<strong>不得</strong>以訴訟請求保費。<trap>陷阱</trap>「未經被保人書面承認並約定保險金額者無效」→ 年金保險此規定為<strong>有效</strong>（與死亡保險不同）。</p>
+  </div></div>
+</div>
+
+<div class="footer">
+  <p>保險實務 267 題（7章＋附錄）完整考點萃取</p>
+  <p style="margin-top:4px">所有 <span style="color:var(--warm)">key</span> 必背概念 · <span style="color:var(--red)">trap</span> 陷阱標記 · <span style="color:var(--sage)">memo</span> 記憶口訣</p>
+</div>
+
+</div>
+</body>
+</html>
