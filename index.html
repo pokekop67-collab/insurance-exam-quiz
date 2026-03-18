@@ -3,50 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>保險考試題庫系統</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>保險考試核心考點攻略</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#0f0f13;--card:#1a1a24;--accent:#00b4d8;--accent2:#90e0ef;--green:#00b894;--purple:#a29bfe;--text:#e0e0e0;--sub:#888}
+    :root{--bg:#F7F5F2;--card:#FFF;--warm:#C4956A;--blue:#7E9AB5;--t1:#2C2825;--t2:#7A746D;--t3:#A9A29A;--bdr:#E5E0DA}
     *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
-    .hero{text-align:center;margin-bottom:50px}
-    .badge{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--purple));padding:6px 18px;border-radius:50px;font-size:.78rem;letter-spacing:2px;margin-bottom:16px;color:#fff}
-    h1{font-size:2.2rem;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px}
-    .sub{color:var(--sub);font-size:.95rem}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:700px;width:100%}
-    .card{background:var(--card);border-radius:20px;padding:32px 28px;border:1px solid rgba(255,255,255,.06);text-decoration:none;color:var(--text);transition:transform .3s,box-shadow .3s,border-color .3s;display:block}
-    .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.4);border-color:rgba(0,180,216,.3)}
-    .card-icon{font-size:2.4rem;margin-bottom:16px}
-    .card h2{font-size:1.15rem;font-weight:700;margin-bottom:8px}
-    .card p{color:var(--sub);font-size:.86rem;line-height:1.7}
-    .tag{display:inline-block;margin-top:14px;padding:4px 12px;border-radius:50px;font-size:.75rem;font-weight:500}
-    .tag.g{background:rgba(0,184,148,.15);color:var(--green)}
-    .tag.b{background:rgba(0,180,216,.15);color:var(--accent)}
-    footer{margin-top:50px;color:var(--sub);font-size:.8rem;text-align:center}
+    body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--t1);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px}
+    .hero{text-align:center;margin-bottom:48px}
+    .line{width:1px;height:40px;background:var(--warm);margin:0 auto 24px}
+    h1{font-family:'Noto Serif TC',serif;font-size:2rem;font-weight:700;letter-spacing:2px;margin-bottom:10px}
+    h1 em{font-style:normal;color:var(--warm)}
+    .sub{color:var(--t2);font-size:.9rem;font-weight:300}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:640px;width:100%}
+    .card{background:var(--card);border:1px solid var(--bdr);border-radius:16px;padding:32px 28px;text-decoration:none;color:var(--t1);transition:transform .25s,box-shadow .25s,border-color .25s;display:block;box-shadow:0 1px 3px rgba(44,40,37,.06)}
+    .card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(44,40,37,.1);border-color:var(--warm)}
+    .card:last-child:hover{border-color:var(--blue)}
+    .card-icon{font-size:2rem;margin-bottom:14px}
+    .card h2{font-family:'Noto Serif TC',serif;font-size:1.1rem;font-weight:700;margin-bottom:8px}
+    .card p{color:var(--t2);font-size:.84rem;line-height:1.8}
+    .tag{display:inline-block;margin-top:14px;padding:3px 12px;border-radius:50px;font-size:.72rem;font-weight:600;letter-spacing:1px}
+    .tag.w{background:rgba(196,149,106,.12);color:var(--warm)}
+    .tag.b{background:rgba(126,154,181,.12);color:var(--blue)}
+    footer{margin-top:48px;color:var(--t3);font-size:.78rem;text-align:center;letter-spacing:1px}
+    @media(max-width:480px){h1{font-size:1.5rem}.grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <div class="hero">
-    <div class="badge">保險考試 · 題庫系統</div>
-    <h1>保險考試核心題庫</h1>
-    <p class="sub">實務 267 題 × 法規 389 題 · 精選核心考點</p>
+    <div class="line"></div>
+    <h1>保險考試<em>核心考點</em>攻略</h1>
+    <p class="sub">實務 267 題 · 法規 389 題 · 精選必考考點整理</p>
   </div>
 
   <div class="grid">
     <a class="card" href="insurance-practice-267.html">
       <div class="card-icon">📋</div>
       <h2>保險實務核心考點</h2>
-      <p>267 題精選，涵蓋保險實務操作、理賠流程、核保規範等高頻考點。</p>
-      <span class="tag g">267 題 · 實務</span>
+      <p>267 個核心考點，涵蓋實務操作、理賠流程、核保規範，附陷阱提醒與公式整理。</p>
+      <span class="tag w">267 考點 · 實務</span>
     </a>
     <a class="card" href="insurance-law-389.html">
       <div class="card-icon">⚖️</div>
       <h2>保險法規核心考點</h2>
-      <p>389 題精選，涵蓋保險法、相關法規條文、監理規範等必考法規。</p>
-      <span class="tag b">389 題 · 法規</span>
+      <p>389 個核心考點，涵蓋保險法條文、監理規範、重要修法，附條文對照與記憶技巧。</p>
+      <span class="tag b">389 考點 · 法規</span>
     </a>
   </div>
 
-  <footer>保險考試題庫系統 · pokekop67-collab</footer>
+  <footer>保險考試核心考點攻略 · pokekop67-collab</footer>
 </body>
 </html>
